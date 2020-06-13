@@ -90,7 +90,7 @@ public class DepartmentFormController implements Initializable {
 	private Department getFormaData() {
 		Department obj = new Department();
 		ValidationException exception = new ValidationException("Validation error");
-		obj.setId(Utils.tryParseToInt(textFieldId.getId()));
+		obj.setId(Utils.tryParseToInt(textFieldId.getText()));
 		
 		if(textFieldName.getText() == null || textFieldName.getText().trim().equals("")) {
 			exception.addError("name", "Campo não pode ser Vazio!");
