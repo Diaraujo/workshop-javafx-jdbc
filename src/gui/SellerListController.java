@@ -121,7 +121,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 			controller.upDateFormData();
 
 			Stage dialogStage = new Stage();
-			dialogStage.setTitle("Entre com os dados do departamento");
+			dialogStage.setTitle("Entre com os dados do Vendedor");
 			dialogStage.setScene(new Scene(pane));
 			dialogStage.setResizable(false);
 			dialogStage.initOwner(parentStage);
